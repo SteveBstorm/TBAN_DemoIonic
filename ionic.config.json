@@ -1,0 +1,7 @@
+{
+  "name": "TBAN_IonicDemo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

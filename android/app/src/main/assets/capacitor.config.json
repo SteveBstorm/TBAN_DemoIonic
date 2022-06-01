@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "TBAN_IonicDemo",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

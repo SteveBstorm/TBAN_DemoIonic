@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>maliste</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-label>Status : {{connectionStatus}}</ion-label>
+  <ion-list>
+    <ion-item *ngFor="let item of liste; let i = index;">
+      <ion-label (click)="showAction(i)">{{item}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

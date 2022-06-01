@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-label>Status de connexion : {{connectionStatus}}</ion-label>
+  <ion-button *ngIf="!connectionStatus" (click)="login()">Connexion</ion-button>
+  <ion-button *ngIf="connectionStatus" (click)="logout()">Déconnexion</ion-button>
+</ion-content>
